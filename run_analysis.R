@@ -20,6 +20,7 @@
 
 # Download and unzip files at working directory
 library(dplyr)
+
 source("gatherfiles.r")
 
 originaldata <- read.table("sensordata.csv",sep = ",", header = TRUE)
@@ -27,9 +28,12 @@ originaldata <- read.table("sensordata.csv",sep = ",", header = TRUE)
 grp_data <- tbl_df(originaldata) %>%
   arrange(subject) %>%
   group_by(subject,activity)
+# 
+# teste<- ddply(grp_data,.(subject,activity),summarize,mean(tBodyAcc.mean.X))
+# teste2<- ddply(grp_data,.(subject,activity),summarize,mean(grp_data$tBodyAcc.mean.X))
 
-ddply(grp_data,.(subject,activity),summarize,mean(tBodyAcc.mean.X))
 
+summarized_data <- summarize_all(grp_data, mean) %>%
+        arrange(subject,activity)
 
-summarized_data <- summarize_each(grouped_by_subject_activity, mean)
-
+write.table(mergeddata,"sensordata.csv", sep = ",", col.names = names(mergeddata) )
