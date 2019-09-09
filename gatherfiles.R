@@ -9,7 +9,7 @@ directory <- "UCI HAR Dataset"
 
 
 if(!file.exists(fileName)){
-  download.file(url,fileName) 
+  download.file(fileURL,fileName) 
 }
 
 if(!file.exists(directory)){
@@ -51,7 +51,8 @@ selected_x <- grep("mean|std", names_completedata)
 dataselected <- complete_data[,c(1,selected_x,563)]
 
 mergeddata <- merge(dataselected,activity_labels,by.x = "cod_activity",
-                    by.y = "cod_activity")
+                    by.y = "cod_activity") %>%
+        select(-cod_activity)
 
 
 write.table(mergeddata,"sensordata.csv", sep = ",", col.names = names(mergeddata) )
