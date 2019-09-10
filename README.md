@@ -1,4 +1,4 @@
-#1. Intro
+# 1. Intro
 
 This program is suposed to read different files about an experience availabe at UCI repository.
 In this experience some user were invited to perform the actions of:
@@ -13,7 +13,11 @@ information please check:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 Before you go further, I really recomend the lecture of the thoughtfulbloke aka David Hood # available at 
+
 https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/
-this post shed a lot of ligth to this task in particular, but also brings important tips# for cleaning data in genereal. 
+
+this post shed a lot of ligth to these task in particular, but also brings important tips# for cleaning data in genereal. 
 
 I really recomend this post.
+
+# 2. Script
