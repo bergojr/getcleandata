@@ -29,10 +29,11 @@ The scritp first download the zipped datasets and unzip then in folders as follo
  		train
 
 The main files that will compose the data frame are:
-	subject_test.txt    ---------	(2.947 samples of 1 variables)
-	X_test.txt 			---------	(2.947 samples of 561 variables)
-	y_test.txt 			---------	(2.947 samples of 1 variables)
-	subject_train.txt   ---------	(7.352 samples of 1 variable)
+###
+ 	subject_test.txt    	---------	(2.947 samples of 1 variables)
+	X_test.txt 		---------	(2.947 samples of 561 variables)
+	y_test.txt 		---------	(2.947 samples of 1 variables)
+	subject_train.txt   	---------	(7.352 samples of 1 variable)
 	X_train.txt 		---------	(7.352 samples of 561 variables)
 	y_train.txt 		---------	(7.352 samples of 1 variable)
 
@@ -41,6 +42,7 @@ When arranged will be generate a data frame composed by 10.299 samples of 563 va
 As per request only the variables of mean and standard deviation (std) should be selected, this result in a new dataframe of 10.299 samples with 81, 79 of those are variables, 1 is subject and 1 is activity.
 
 It is requested to name the colunms propoerly. The UCI data set is very well explained trhough files:
+###
 	features.txt
 	features_info.txt
 	README.txt
