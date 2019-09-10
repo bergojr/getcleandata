@@ -1,5 +1,6 @@
-# getcleandata
-# This program is suposed to read different files about an experience availabe at UCI repository.
+getcleandata
+
+This program is suposed to read different files about an experience availabe at UCI repository.
 # In this experience some user were invited to perform the actions of:
 # 
 # LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS
