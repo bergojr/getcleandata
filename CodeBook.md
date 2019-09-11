@@ -32,10 +32,9 @@ Is worth to say that, except for the variables subject and activity, the final d
 For simplification and verbosity reduction the term "Mean of" is supressed for every numeric variable. Moreover, the original dataset is normalizes, so for numeric variables the range lays at interval [-1,1].
 
 ###
-
-Variable 1 - Subject, refers to id person using the smartphone during activity.
-Variable 2 - Activity, 6 factors activities:  LAYING SITTING STANDING WALKING WALKING_DOWNSTAIRS WALKING_UPSTAIRS
-Variables 3 to 81 where grouped in category as follow: 
+	Variable 1 - Subject, refers to id person using the smartphone during activity.
+	Variable 2 - Activity, 6 factors activities:  LAYING SITTING STANDING WALKING WALKING_DOWNSTAIRS WALKING_UPSTAIRS
+	Variables 3 to 81 where grouped in category as follow: 
 
 ###
 	tBodyAcc: Body acceleration
