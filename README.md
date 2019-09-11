@@ -1,4 +1,4 @@
-# 1. Intro
+## 1. Intro
 
 This program is suposed to read different files about an experience availabe at UCI repository.
 In this experience some user were invited to perform the actions of:
@@ -20,7 +20,7 @@ this post shed a lot of ligth to these task in particular, but also brings impor
 
 I really recomend this post.
 
-# 2. Script
+## 2. Script
 
 The scritp first download the zipped datasets and unzip then in folders as follow:
 
@@ -30,12 +30,13 @@ The scritp first download the zipped datasets and unzip then in folders as follo
 
 The main files that will compose the data frame are:
 ###
- 	subject_test.txt    	---------	(2.947 samples of 1 variables)
-	X_test.txt 		---------	(2.947 samples of 561 variables)
-	y_test.txt 		---------	(2.947 samples of 1 variables)
-	subject_train.txt   	---------	(7.352 samples of 1 variable)
-	X_train.txt 		---------	(7.352 samples of 561 variables)
-	y_train.txt 		---------	(7.352 samples of 1 variable)
+ 
+	subject_test.txt    - - -	(2.947 samples of 1 variables)
+	X_test.txt 			- - -	(2.947 samples of 561 variables)
+	y_test.txt 			- - -	(2.947 samples of 1 variables)
+	subject_train.txt   - - -	(7.352 samples of 1 variable)
+	X_train.txt 		- - -	(7.352 samples of 561 variables)
+	y_train.txt 		- - -	(7.352 samples of 1 variable)
 
 When arranged will be generate a data frame composed by 10.299 samples of 563 variables.
 
@@ -43,14 +44,42 @@ As per request only the variables of mean and standard deviation (std) should be
 
 It is requested to name the colunms propoerly. The UCI data set is very well explained trhough files:
 ###
-	features.txt
-	features_info.txt
-	README.txt
+	+features.txt
+	+features_info.txt
+	+README.txt
 
 Since they are descritive enough I decided to let them as the label for the final data set. The final result is a "mean of..." each variable but to avoid a verbose label such information is supressed at data label an explained at databook
 
 The final task for this script is calculate the mean of each variable grouped by subject and activity resulting in a final dataframe of 180 samples that is recorded in a text file as a data table.
 
-# 3. Data book
+## 3. Databook
 
+First of all, is worth to say that, except for the variables subject and activity, the final data set presented is a mean of the previous one pre-calculated.
+For simplification and verbosity reduction the term "Mean of" is supressed for every numeric variable. Moreover, the original dataset is normalizes, so for numeric variables the range lays at interval [-1,1].
+
+###
+Variable 1 - Subject, refers to id person using the smartphone during activity.
+Variable 2 - Activity, 6 factors activities:  LAYING SITTING STANDING WALKING WALKING_DOWNSTAIRS WALKING_UPSTAIRS
+Variables 3 to 81 where grouped in category as follow: 
+
+###
+	tBodyAcc: Body acceleration
+	tGravityAcc: Gravity acceleration
+	tBodyAccJerk: Derived of body acceleration
+	tBodyGyro: Body angular velocity
+	tBodyGyroJerk: Derived of body angular velocity
+	tBodyAccMag: Magnitude (Euclidean distance) of body acceleration
+	tGravityAccMag: Magnitude (Euclidean distance) of gravity acceleration
+	tBodyAccJerkMag: Magnitude  (Euclidean distance) of derived of body acceleration
+	tBodyGyroMag: Magnitude of body angular velocity
+	tBodyGyroJerkMag: Magnitude of derived of body angular velocity
+	fBodyAcc: Frequency of body acceleration
+	fBodyAccJerk: Derived of frequency of body acceleration
+	fBodyGyro: Frequency of body angular velocity
+	fBodyAccMag: Magnitude (Euclidean distance) of frequency of body acceleration
+	fBodyBodyAccJerkMag: Magnitude of derived of frequency of body acceleration
+	fBodyBodyGyroMag: Magnitude of frequency of body angular velocity
+	fBodyBodyGyroJerkMag: Magnitude of derived of frequency of body angular velocity
+
+for further information please check CodeBook.xlxs file at the repository.
 
